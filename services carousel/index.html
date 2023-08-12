@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/glider.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>DeepCytes</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+</head>
+
+<body>
+    <div class="glider-contain">
+        <button class="glider-prev">
+            <i class="uil uil-arrow-circle-left"></i>
+        </button>
+
+        <div class="glider">
+            <figure class="odd">
+                <h1 class="serviceName">Cyber <br> Forensics</h1>
+                <section class="details">
+                    Get ready to dive into the captivating world of cyber forensics in our thrilling workshop designed
+                    for corporates! Discover the thrill of solving digital mysteries, sharpen your investigative skills,
+                    and have a blast uncovering the secrets of cybersecurity in a fun-filled, interactive experience.
+                </section>
+            </figure>
+
+            <figure class="even">
+                <h1 class="serviceName">Ethical <br> Hacking</h1>
+                <section class="details">
+                    Unleash your team's inner hackers in our exhilarating ethical hacking workshop tailored for
+                    corporates! Explore the art of ethical hacking through hands-on challenges, intriguing puzzles, and
+                    high-octane simulations, making cybersecurity learning an exciting and enjoyable adventure.
+                </section>
+            </figure>
+
+            <figure class="odd">
+                <h1 class="serviceName">Android</h1>
+                <section class="details" style="margin-top: 50px">
+                    <!-- Added Extra Margin Because Title is Single Word -->
+                    Gear up for an electrifying Android workshop catered to corporates! Dive into the world of mobile
+                    app development, unleash your creativity, and witness the thrill of building cutting-edge Android
+                    applications in a dynamic and fun-filled learning environment.
+                </section>
+            </figure>
+        </div>
+
+        <button class="glider-next">
+            <i class="uil uil-arrow-circle-right"></i>
+        </button>
+
+        <div id="dots" class="glider-dots" role="tablist"></div>
+    </div>
+
+
+    <script src="js/glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'),
+            {
+                // Mobile-first defaults
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                scrollLock: true,
+                draggable: true,
+                dots: '#dots',
+                arrows: {
+                    prev: '.glider-prev',
+                    next: '.glider-next'
+                },
+                responsive:
+                    [
+                        {
+                            // screens greater than >= 775px
+                            breakpoint: 600,
+                            settings: {
+                                // Set to `auto` and provide item width to adjust to viewport
+                                slidesToShow: '1.5',
+                                slidesToScroll: 'auto',
+                                draggable: true,
+                                itemWidth: 150,
+                                duration: 0.25
+                            }
+                        },
+                        {
+                            // screens greater than >= 1024px
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                                draggable: true,
+                                itemWidth: 150,
+                                duration: 0.25
+                            }
+                        }
+                    ]
+            });
+    </script>
+</body>
+
+</html>

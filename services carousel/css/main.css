@@ -93,3 +93,17 @@ figure .details {
   transition: all ease 0.5s;
 } */
 /*# sourceMappingURL=main.css.map */
+
+figure .aboutdc {
+
+  margin-top: 50px; 
+  padding-left: 100px;
+  padding-right: 100px;
+  color: white;
+}
+
+figure .blurbg{
+  background-image: url('../../assests/dcbg.jpg');
+  filter: blur(5px);
+  -webkit-filter: blur(8px);
+}

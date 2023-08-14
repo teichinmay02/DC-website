@@ -113,8 +113,8 @@ figure .blurbg{
 .cursor {
   width: 20px;
   height: 20px;
-  border: 1px solid white;
-  border-radius: 50%;
+  border: 5px solid white;
+  border-radius: 70%;
   position: absolute;
   transition-duration: 200ms;
   transition-timing-function: ease-out;

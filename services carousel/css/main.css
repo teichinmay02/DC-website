@@ -1,9 +1,14 @@
+@font-face {
+        font-family: 'Lastica'; 
+        src: url('../../assests/Lastica.otf') format(opentype);
+        }  
 body {
   /* background-color: #ee3636; */
   margin: 0;
   padding: 0;
   background-image: linear-gradient(0deg, #000000 1.9%, #412888 53.65%, #381973 87.5%, #1F004C 93.37%, #1C0043 97.2%);
   font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Lastica', sans-serif; */
   cursor: none;
 }
 
@@ -171,3 +176,69 @@ figure .blurbg{
   border: 1px solid red;
 }
 
+
+/* Style for the main container */
+.count {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style for the left column */
+.count-left {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Style for the title */
+.custom-title {
+  font-family: 'Lastica', sans-serif;
+  color: rgb(242, 8, 246);
+  font-size: 35px;
+  font-weight: bold;
+  
+ 
+}
+
+/* Style for the video */
+.count-left video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for the right column */
+.count-right {
+  flex: 1;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.count-right p {
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.count-right p#contact-us {
+  color: yellow;
+  font-size: 20px;
+}
+
+
+.social-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 100px;
+}
+
+.social-cards .email,
+.social-cards .insta,
+.social-cards .facebook {
+            width: calc(33.33% - 10px); /* Adjust the width as needed */
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }

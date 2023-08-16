@@ -242,3 +242,28 @@ figure .blurbg{
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
+
+.resources-image-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 200px;
+  max-width: 600px;
+  padding: 50px;
+  padding-left: 300px;
+  border-radius: 10px;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.image-text {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}

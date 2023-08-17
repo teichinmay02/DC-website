@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Ui Button</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<style>
+    .btnDc {
+        width: 66px;
+        height: 50px;
+        border-radius: 14px;
+    }
+
+    .buttonArea {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .infoArea {
+        visibility: hidden;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col buttonArea">
+                <section class="d-flex flex-column align-items-center">
+                    <button type="button" class="btnDc" id="btn1" onclick="classManipulation(this)">
+                        <i class="fa-solid fa-music"></i>
+                    </button>
+                    <caption>Tool Name</caption>
+                </section>
+
+                <section class="d-flex flex-column align-items-center">
+                    <button type="button" class="btnDc" id="btn2" onclick="classManipulation(this)">
+                        <i class="fa-solid fa-music"></i>
+                    </button>
+                    <caption>Tool Name</caption>
+                </section>
+
+                <section class="d-flex flex-column align-items-center">
+                    <button type="button" class="btnDc" id="btn3" onclick="classManipulation(this)">
+                        <i class="fa-solid fa-music"></i>
+                    </button>
+                    <caption>Tool Name</caption>
+                </section>
+
+            </div>
+
+            <div class="infoArea" id="infoArea">
+                <p id="info"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+        const classManipulation = (button) => {
+            const buttonArea = button.parentNode.parentNode;
+            const buttonID = button.id
+
+            if (buttonArea.classList.contains('col')) {
+                document.getElementById('infoArea').classList.add("col");
+
+                if (buttonID == "btn1") {
+                    document.getElementById('info').style.visibility = "visible";
+                    document.getElementById('info').textContent = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, officiis recusandae                   expedita veritatis deleniti delectus cumque repellat dolor esse omnis aspernatur adipisci minima a libero repudiandae! Esse blanditiis distinctio info1!"
+                } else if (buttonID == "btn2") {
+                    document.getElementById('info').style.visibility = "visible";
+                    document.getElementById('info').textContent = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, officiis recusandae                   expedita veritatis deleniti delectus cumque repellat dolor esse omnis aspernatur adipisci minima a libero repudiandae! Esse blanditiis distinctio info2!"
+                } else if (buttonID == "btn3") {
+                    document.getElementById('info').style.visibility = "visible";
+                    document.getElementById('info').textContent = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, officiis recusandae                   expedita veritatis deleniti delectus cumque repellat dolor esse omnis aspernatur adipisci minima a libero repudiandae! Esse blanditiis distinctio info3!"
+                }
+
+            }
+        }
+    </script>
+
+
+    <script src="https://kit.fontawesome.com/1ad43aed0a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

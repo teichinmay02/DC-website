@@ -12,14 +12,39 @@
     <script src="https://kit.fontawesome.com/8007348531.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="cursor: none;">
+<body>
     <header>
         <nav class="navbar">
+          <img src="../assests/logo.png" alt="Logo">
           <ul>
-            <li><a href="#about" class="about">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="about">About</a>
+              <!-- <ul class="dropdown">
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+              </ul> -->
+            </li>
+            <li><a href="#">Services</a>
+              <ul class="dropdown">
+                <li><a href="#">image forensics</a></li>
+                <li><a href="#">audio forensics</a></li>
+                <li><a href="#">video forensics</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Resources</a>
+              <ul class="dropdown">
+                <li><a href="#">Resource 1</a></li>
+                <li><a href="#">Resource 2</a></li>
+                <li><a href="#">Resource 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a>
+              <ul class="dropdown">
+                <li><a href="#">Contact 1</a></li>
+                <li><a href="#">Contact 2</a></li>
+                <li><a href="#">Contact 3</a></li>
+              </ul>
+            </li>
           </ul>
           <div class="search">
             <a href="#" class="button">24x7 Cyber helpline</a>
@@ -27,12 +52,12 @@
         </nav>
       </header>
     
-        <div class="glider-contain" style="cursor: none; ">
+        <div class="glider-contain" >
             <button class="glider-prev">
                 <i class="uil uil-arrow-circle-left"></i>
             </button>
             <center><h1 class="serviceName" style="color: white; font-size: 40px;">Services</h1></center>
-            <div class="glider" style="cursor: none;">
+            <div class="glider" >
                 <figure class="odd">
                     <h1 class="serviceName">Cyber <br> Forensics</h1>
                     <section class="details">
@@ -140,7 +165,7 @@
             <div id="about">
 
                 <center><h1 class="serviceName" style="color: white; padding-top: 150px;">About DeepCytes</h1></center>
-                <figure style="cursor: none;">
+                <figure>
                     
                     <div class="blurbg" > </div>
                         <div class="aboutdc">
@@ -160,7 +185,7 @@
 
             </div>
 
-            
+
             <div class="count">
                 <div class="count-left">
                     <font class="custom-title" >YOU  CAN  COUNT  ON  US</font> 
@@ -192,7 +217,7 @@
             </div>
 
         </div>
-        <div class="cursor"> </div>
+      
 
     <script src="js/glider.min.js"></script>
     <script>
@@ -235,19 +260,7 @@
                         }
                     ]
             });
-            const cursor = document.querySelector('.cursor');
 
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-})
-
-document.addEventListener('click', () => {
-    cursor.classList.add("expand");
-
-    setTimeout(() => {
-        cursor.classList.remove("expand");
-    }, 500)
-})
     </script>
    
 </body>

@@ -9,7 +9,7 @@ body {
   background-image: linear-gradient(0deg, #000000 1.9%, #412888 53.65%, #381973 87.5%, #1F004C 93.37%, #1C0043 97.2%);
   font-family: 'Open Sans', sans-serif;
   /* font-family: 'Lastica', sans-serif; */
-  cursor: none;
+ 
 }
 
 .glider-contain {
@@ -18,7 +18,115 @@ body {
   display: block;
   padding-top: 100px;
 }
+.navbar {
+  position: fixed;
+  width: 97.5%;
+  background-color: #000047;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
 
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+  position: relative; /* Add relative positioning for dropdown */
+}
+
+.navbar img {
+  position: relative;
+  width: 120px;
+  height: 75px;
+  margin-right: auto;
+  top: 0;
+  transform: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar li a:hover {
+  color: #62C7D1;
+}
+
+/* Dropdown styles */
+.navbar ul.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000047;
+  border-radius: 8px;
+  display: none;
+  padding: 5px 0;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.navbar li:hover ul.dropdown {
+  display: block;
+}
+
+.navbar li ul.dropdown li {
+  margin: 0;
+}
+
+.navbar li ul.dropdown li a {
+  color: white;
+  padding: 10px;
+  display: block;
+  transition: color 0.3s; /* Add a transition effect for smooth color change */
+}
+
+.navbar li ul.dropdown li a:hover {
+  color: #62C7D1; /* Change the text color on hover */
+}
+
+.search {
+  color: white;
+  background-color: linear-gradient(90deg, #7845D8 0%, #62C7D1 100%);
+  border: none;
+  color: #4caf50;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-left: auto;
+}
+
+.navbar input {
+  border: 2px solid black;
+  padding: 3px 10px;
+  width: 60px;
+}
+
+.button {
+  background: linear-gradient(90deg, #7845D8 0%, #62C7D1 100%);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.about {
+  margin-left: 20px;
+}
 figure {
   background-color: #2c2c2c;
   display: block;
@@ -114,69 +222,7 @@ figure .blurbg{
   filter: blur(5px);
   -webkit-filter: blur(8px);
 }
-
-
-.cursor {
-  width: 20px;
-  height: 20px;
-  border: 5px solid white;
-  border-radius: 70%;
-  position: absolute;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-  animation: cursorAnim .5s infinite alternate;
-  pointer-events: none;
-}
-
-.cursor::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border: 8px solid gray;
-  border-radius: 50%;
-  opacity: .5;
-  top: -8px;
-  left: -8px;
-  animation: cursorAnim2 .5s infinite alternate;
-}
-
-@keyframes cursorAnim {
-  from {
-      transform: scale(1);
-  }
-  to {
-      transform: scale(.7);
-  }
-}
-
-@keyframes cursorAnim2 {
-  from {
-      transform: scale(1);
-  }
-  to {
-      transform: scale(.4);
-  }
-}
-
-@keyframes cursorAnim3 {
-  0% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(3);
-  }
-  100% {
-      transform: scale(1);
-      opacity: 0;
-  }
-}
-
-.expand {
-  animation: cursorAnim3 .5s forwards;
-  border: 1px solid red;
-}
-
+/* 
 
 /* Style for the main container */
 .count {
@@ -271,7 +317,6 @@ figure .blurbg{
 
 
 .navbar {
-  width: 97.5%;
   position: fixed;
   top: 0;
   z-index: 100;

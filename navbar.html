@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Navigation</title>
+    <style>
+      .navbar {
+        background-color:#000047;
+;
+        display: flex;
+        justify-content: space-between; /* Align items at both ends */
+        align-items: center; /* Vertically center items */
+        padding: 10px 20px; /* Add padding for spacing */
+      }
+
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar li {
+        margin: 0 15px; /* Adjust spacing between navigation items */
+      }
+
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .navbar li a:hover {
+        color:;
+      }
+
+      .search {
+        color: white;
+        background-color: linear-gradient(90deg, #7845D8 0%, #62C7D1 100%);
+        /* Green */
+        border: none;
+        color: #4caf50;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 8px;
+        border-radius: 8px;
+        margin-top: 5px;
+        margin-left: auto; /* Move the button to the right */
+      }
+
+      .navbar input {
+        border: 2px solid black;
+        padding: 3px 10px;
+        width: 60px;
+      }
+
+      .button {
+        background: linear-gradient(90deg, #7845D8 0%, #62C7D1 100%); /* Updated background gradient */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+  
+      }
+      .about {
+        margin-left: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" class="about">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="search">
+          <a href="#" class="button">24x7 Cyber helpline</a>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

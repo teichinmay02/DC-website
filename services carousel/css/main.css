@@ -16,7 +16,7 @@ body {
   width: 85%;
   height: 100vh;
   display: block;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 .navbar {
   position: fixed;
@@ -386,4 +386,12 @@ border-radius: 8px;
 }
 .about {
   margin-left: 600px;
+}
+
+.red-teaming-tools{
+padding-top: 150px;
+}
+
+.image-forensics2 {
+  padding-top: 300px;
 }

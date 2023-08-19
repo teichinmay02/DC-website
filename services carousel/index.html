@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -14,36 +14,31 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" style="background-color: rgba(0,0,0,0.7);">
             <img src="../assests/logo.png" alt="Logo">
             <ul>
-                <li><a href="#" class="about">About</a>
+                <li><a href="#about" class="about">About</a>
                     <!-- <ul class="dropdown">
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Mission</a></li>
                 <li><a href="#">Vision</a></li>
               </ul> -->
                 </li>
-                <li><a href="#">Services</a>
+                <li><a href="#services">Services</a>
                     <ul class="dropdown">
                         <li><a href="#">image forensics</a></li>
                         <li><a href="#">audio forensics</a></li>
                         <li><a href="#">video forensics</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Resources</a>
+                <li><a href="#resources">Resources</a>
                     <ul class="dropdown">
-                        <li><a href="#">Resource 1</a></li>
-                        <li><a href="#">Resource 2</a></li>
-                        <li><a href="#">Resource 3</a></li>
+                        <li><a href="#">Red Team</a></li>
+                        <li><a href="#">Forensics</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contact</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Contact 1</a></li>
-                        <li><a href="#">Contact 2</a></li>
-                        <li><a href="#">Contact 3</a></li>
-                    </ul>
+                <li><a href="#contact">Contact</a>
+                   
                 </li>
             </ul>
             <div class="search">
@@ -53,84 +48,93 @@
     </header>
 
     <div class="glider-contain">
-        <div id="about">
+        <div id="about" class="video-container" >
+            <video width="1300px" height="auto">
+                <source src="../assests/dummy.mp4" >
+            </video>
 
-            <center>
-                <h1 class="serviceName" style="color: white; padding-top: 150px;">About DeepCytes</h1>
-            </center>
-            <figure>
-
-                <div class="blurbg"> </div>
-                <div class="aboutdc">
-                    <h2 class="serviceName"
-                        style="font-size: 50px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-                        Welcome to Our Cutting - Edge Cyber Forensics Website.</h2>
-                    <p style="font-size: 30px">where we unleash the power of digital investigation to unravel the truth
-                        in a world clouded by deception. </p>
-                    <!-- Added Extra Margin Because Title is Single Word -->
-                    <h5 style="font-size: 20px;"> Our state-of-the-art Cyber Forensics platform harnesses digital
-                        investigation to unveil truths in a world veiled by deception. As a Cyber Intelligence
-                        powerhouse, we proudly present a range of ingenious tools empowering investigators to decipher
-                        enigmas within the digital realm. Our toolkit spans diverse expertise including: <br>
-                        <ul>
-                            <li>
-                                <font style="color: aqua;">Image Forensics</font> —unveiling subtle manipulations in
-                                images
-                            </li>
-                            <li>
-                                <font style="color: aqua;">Video & Audio Forensics</font>, delving into audiovisual
-                                content to expose tampering or authenticity issues.
-                            </li>
-                            <li>
-                                <font style="color: aqua;">Web, Mobile, and API VAPT</font>—fortifying digital
-                                landscapes, securing websites, apps, and communication channels against lurking cyber
-                                threats.
-                            </li>
-                            <li>
-                                <font style="color: aqua;">Source Code Review</font>—delving into software's core to
-                                ensure utmost safety.
-                            </li>
-                        </ul>
-                    </h5>
-                </div>
-            </figure>
+            <div class="video-container-caption">
+                
+                <figure>
+                    <center>
+                        <h1 class="serviceName" style="color: white; ">About DeepCytes</h1>
+                    </center>
+                    <div class="blurbg"> </div>
+                    <div class="aboutdc">
+                        <h2 class="serviceName"
+                            style="font-size: 50px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                            Welcome to Our Cutting - Edge Cyber Forensics Website.</h2>
+                        <p style="font-size: 30px">where we unleash the power of digital investigation to unravel the truth
+                            in a world clouded by deception. </p>
+                        <!-- Added Extra Margin Because Title is Single Word -->
+                        <h5 style="font-size: 20px;"> Our state-of-the-art Cyber Forensics platform harnesses digital
+                            investigation to unveil truths in a world veiled by deception. As a Cyber Intelligence
+                            powerhouse, we proudly present a range of ingenious tools empowering investigators to decipher
+                            enigmas within the digital realm. Our toolkit spans diverse expertise including: <br>
+                            <ul>
+                                <li>
+                                    <font style="color: aqua;">Image Forensics</font> —unveiling subtle manipulations in
+                                    images
+                                </li>
+                                <li>
+                                    <font style="color: aqua;">Video & Audio Forensics</font>, delving into audiovisual
+                                    content to expose tampering or authenticity issues.
+                                </li>
+                                <li>
+                                    <font style="color: aqua;">Web, Mobile, and API VAPT</font>—fortifying digital
+                                    landscapes, securing websites, apps, and communication channels against lurking cyber
+                                    threats.
+                                </li>
+                                <li>
+                                    <font style="color: aqua;">Source Code Review</font>—delving into software's core to
+                                    ensure utmost safety.
+                                </li>
+                            </ul>
+                        </h5>
+                    </div>
+                </figure>
+            </div>
+            
 
         </div>
         <!-- <button class="glider-prev">
                 <i class="uil uil-arrow-circle-left"></i>
             </button> -->
-        <center>
-            <h1 class="serviceName" style="color: white; font-size: 40px;">Services</h1>
-        </center>
-        <div class="glider">
-            <figure>
-                <h1 class="serviceName">Cyber <br> Forensics</h1>
-                <section class="details">
-                    Get ready to dive into the captivating world of cyber forensics in our thrilling workshop designed
-                    for corporates! Discover the thrill of solving digital mysteries, sharpen your investigative skills,
-                    and have a blast uncovering the secrets of cybersecurity in a fun-filled, interactive experience.
-                </section>
-            </figure>
+        <div id="services" style="padding-top: 92px;">
 
-            <figure>
-                <h1 class="serviceName">Ethical <br> Hacking</h1>
-                <section class="details">
-                    Unleash your team's inner hackers in our exhilarating ethical hacking workshop tailored for
-                    corporates! Explore the art of ethical hacking through hands-on challenges, intriguing puzzles, and
-                    high-octane simulations, making cybersecurity learning an exciting and enjoyable adventure.
-                </section>
-            </figure>
+            <center>
+                <h1 class="serviceName" style="color: white; font-size: 40px;">Services</h1>
+            </center>
+            <div class="glider">
+                <figure>
+                    <h1 class="serviceName">Cyber <br> Forensics</h1>
+                    <section class="details">
+                        Get ready to dive into the captivating world of cyber forensics in our thrilling workshop designed
+                        for corporates! Discover the thrill of solving digital mysteries, sharpen your investigative skills,
+                        and have a blast uncovering the secrets of cybersecurity in a fun-filled, interactive experience.
+                    </section>
+                </figure>
 
-            <figure>
-                <h1 class="serviceName">Android</h1>
-                <section class="details" style="margin-top: 50px">
-                    <!-- Added Extra Margin Because Title is Single Word -->
-                    Gear up for an electrifying Android workshop catered to corporates! Dive into the world of mobile
-                    app development, unleash your creativity, and witness the thrill of building cutting-edge Android
-                    applications in a dynamic and fun-filled learning environment.
-                </section>
-            </figure>
+                <figure>
+                    <h1 class="serviceName">Ethical <br> Hacking</h1>
+                    <section class="details">
+                        Unleash your team's inner hackers in our exhilarating ethical hacking workshop tailored for
+                        corporates! Explore the art of ethical hacking through hands-on challenges, intriguing puzzles, and
+                        high-octane simulations, making cybersecurity learning an exciting and enjoyable adventure.
+                    </section>
+                </figure>
 
+                <figure>
+                    <h1 class="serviceName">Android</h1>
+                    <section class="details" style="margin-top: 50px">
+                        <!-- Added Extra Margin Because Title is Single Word -->
+                        Gear up for an electrifying Android workshop catered to corporates! Dive into the world of mobile
+                        app development, unleash your creativity, and witness the thrill of building cutting-edge Android
+                        applications in a dynamic and fun-filled learning environment.
+                    </section>
+                </figure>
+
+            </div>
         </div>
 
         <!-- <button class="glider-next">
@@ -139,7 +143,7 @@
 
         <!-- <div id="dots" class="glider-dots" role="tablist"></div> -->
 
-        <div class="resources" style="padding-top: 250px;">
+        <div class="resources" id="resources" style="padding-top: 250px;">
             <div class="forensics-tools">
                 <center>
                     <h1 class="serviceName" style="color: white; font-size: 40px;">Resources</h1>

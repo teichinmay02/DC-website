@@ -21,7 +21,9 @@ body {
 .navbar {
   position: fixed;
   width: 97.5%;
-  background-color: #000047;
+  /* background-color: black;
+  opacity: 90; */
+  /* background-color: rgba(0,0,0,0.7); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -205,7 +207,14 @@ figure .details {
   filter: drop-shadow(-2px 2px 2px #62C7D1);
   /* x-axis, y-axis, blur, color */
 }
-
+.video-container {
+  position: relative;
+}
+.video-container video {
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
 /* .glider figure:hover h1 {
   color: #ff0000;
   -webkit-transition: all ease 0.5s;

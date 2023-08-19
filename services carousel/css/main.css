@@ -6,10 +6,10 @@ body {
   /* background-color: #ee3636; */
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(0deg, #000000 1.9%, #412888 53.65%, #381973 87.5%, #1F004C 93.37%, #1C0043 97.2%);
-  font-family: 'Open Sans', sans-serif;
+  /* background-image: linear-gradient(0deg, #000000 1.9%, #412888 53.65%, #381973 87.5%, #1F004C 93.37%, #1C0043 97.2%);
+  font-family: 'Open Sans', sans-serif; */
   /* font-family: 'Lastica', sans-serif; */
- 
+  background: #412888;
 }
 
 .glider-contain {
@@ -140,15 +140,16 @@ figure {
   box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.8);
 }
 
-figure.odd {
+figure {
   background-color: #0E0023;
   filter: drop-shadow(-2px 2px 2px #62C7D1);
 }
 
-figure.even {
+
+/* figure.even {
   background: linear-gradient(180deg, #29154E 0%, #60B4CB 100%);
   filter: drop-shadow(-2px 2px 2px #62C7D1);
-}
+} */
 
 figure .serviceName {
   color: #ffffff;
@@ -198,6 +199,9 @@ figure .details {
   transform: scale(1.05);
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  /* filter: drop-shadow(-2px 2px 2px #62C7D1); */
+
+  background: linear-gradient(180deg, #29154E 0%, #60B4CB 100%);
   filter: drop-shadow(-2px 2px 2px #62C7D1);
   /* x-axis, y-axis, blur, color */
 }
@@ -234,17 +238,14 @@ figure .blurbg{
 /* Style for the left column */
 .count-left {
   flex: 1;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 /* Style for the title */
 .custom-title {
-  font-family: 'Lastica', sans-serif;
   color: rgb(242, 8, 246);
-  font-size: 35px;
+  font-size: 44px;
   font-weight: bold;
-  
- 
 }
 
 /* Style for the video */

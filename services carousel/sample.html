@@ -10,32 +10,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <script src="https://kit.fontawesome.com/8007348531.js" crossorigin="anonymous"></script>
-    <script src="script.js">
-        // Get references to the image and overlay
-        const image = document.getElementById('image');
-        const overlay = document.getElementById('overlay');
-        const imageText = document.getElementById('imageText');
-
-        // Function to toggle the overlay
-        function toggleOverlay() {
-            overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
-        }
-
-        // Add a click event listener to the image
-        image.addEventListener('click', () => {
-            toggleOverlay();
-        });
-
-        // Close the overlay if the user clicks anywhere outside of it
-        overlay.addEventListener('click', (e) => {
-            if (e.target === overlay) {
-                toggleOverlay();
-            }
-        });
-
-        // You can add more content to the overlay as needed
-
-    </script>
 </head>
 
 <body>
@@ -72,16 +46,27 @@
             </div>
         </nav>
     </header>
-
+    <div class="video-background">
+        <video autoplay muted loop id="video-bg">
+            <source src="Untitled design (6) (3).mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div id="about" class="video-container">
+        <div class="video-container-caption">
+            <!-- Your existing content here -->
+        </div>
+    </div>
+    
     <div class="glider-contain">
         <div id="about" class="video-container" >
             <video width="1300px" height="auto">
-                <source src="../assests/dummy.mp4" type="video/map4" >
+                <source src="../assests/dummy.mp4" >
             </video>
 
             <div class="video-container-caption">
                 
-                <figure class="aboutdeepcytes">
+                <figure>
                     <center>
                         <h1 class="serviceName" style="color: white; ">About DeepCytes</h1>
                     </center>
@@ -118,7 +103,7 @@
                             </ul>
                         </h5>
                     </div>
-                </figure>
+                </figure>>
             </div>
             
 
@@ -200,16 +185,12 @@
 
                     <div class="resources-image-grid1">
 
-                        <figure class="resources-image-container" id="card1">
+                        <figure class="resources-image-container">
                             <!-- <div class="resources-image-container"> -->
                             <img src="../assests/tools/sherlock.png" alt="Image 2" class="image">
                             <div class="image-text">Sherloq</div>
                             <!-- </div> -->
                         </figure>
-                        <div class="expanded-content" id="content1">
-                            <p>Information for Card 1</p>
-                        </div>
-                       
 
                         <figure class="resources-image-container">
                             <img src="../assests/tools/Ghiro.png" alt="Image 2" class="image">
@@ -422,20 +403,7 @@
                         }
                     ]
             });
-        // JavaScript
-        const cards = document.querySelectorAll('.card');
-        const contents = document.querySelectorAll('.expanded-content');
 
-        cards.forEach((card, index) => {
-            card.addEventListener('click', () => {
-                contents.forEach((content) => {
-                    content.classList.remove('open');
-                });
-                setTimeout(() => {
-                    contents[index].classList.add('open');
-                }, 300); // Adjust the delay (in milliseconds) as needed
-            });
-        });
     </script>
 
 </body>

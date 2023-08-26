@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: calc(30% - 20px); /* Adjust for margins */
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: height 0.3s ease-in-out;
+        }
+
+        .expanded-content {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: none;
+            transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out 0.3s;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .card.open {
+            height: 200px; /* Adjust the height as needed */
+        }
+
+        .expanded-content.open {
+            display: block;
+            max-height: 300px; /* Adjust the max-height as needed */
+            opacity: 1;
+        }
+        .image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            }
+
+            .image-text {
+            font-size: 14px;
+            text-align: center;
+            color: white;
+            }
+    </style>
+    <title>Card Expand Animation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <img src="../assests/tools/sherlock.png" alt="Image 2" class="image">
+            <div class="image-text">Sherloq</div>
+        </div>
+        <div class="expanded-content" id="content1">
+            <p>Information for Sherloq</p>
+        </div>
+        <div class="card" id="card2">
+            <img src="../assests/tools/Ghiro.png" alt="Image 2" class="image">
+            <div class="image-text">Ghiro</div>
+        </div>
+        <div class="expanded-content" id="content2">
+            <p>Information for Ghiro</p>
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="card" id="card3">
+            <h2>Card 3</h2>
+        </div>
+        <div class="expanded-content" id="content3">
+            <p>Information for Card 3</p>
+    </div>
+    
+    <script>
+        // JavaScript
+        const cards = document.querySelectorAll('.card');
+        const contents = document.querySelectorAll('.expanded-content');
+
+        cards.forEach((card, index) => {
+            card.addEventListener('click', () => {
+                contents.forEach((content) => {
+                    content.classList.remove('open');
+                });
+                setTimeout(() => {
+                    contents[index].classList.add('open');
+                }, 300); // Adjust the delay (in milliseconds) as needed
+            });
+        });
+    </script>
+</body>
+</html>

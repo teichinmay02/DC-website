@@ -198,38 +198,70 @@
                         </font>
                     </p>
 
-                    <div class="resources-image-grid1">
-
-                        <figure class="resources-image-container" id="card1">
-                            <!-- <div class="resources-image-container"> -->
-                            <img src="../assests/tools/sherlock.png" alt="Image 2" class="image">
-                            <div class="image-text">Sherloq</div>
-                            <!-- </div> -->
-                        </figure>
-                        <div class="expanded-content" id="content1">
-                            <p>Information for Card 1</p>
+                    <div class="container">
+                        <div class="card-container">
+                            <figure class="card" id="card1">
+                                <!-- Content of the card -->
+                                <img src="../assests/tools/sherlock.png" alt="Image 2" class="image">
+                            </figure>
+                            
+                            <figure class="card" id="card2">
+                                <!-- Content of the card -->
+                                <img src="../assests/tools/Ghiro.png" alt="Image 2" class="image">
+                            </figure>
                         </div>
-                       
-
-                        <figure class="resources-image-container">
-                            <img src="../assests/tools/Ghiro.png" alt="Image 2" class="image">
-                            <div class="image-text">Ghiro</div>
-                        </figure>
-
-                        <figure class="resources-image-container">
-                            <img src="../assests/tools/ExifTool.png" alt="Image 3" class="image">
-                            <div class="image-text">Efixtool</div>
-                        </figure>
-
-                        <figure class="resources-image-container">
-                            <img src="../assests/tools/Steghide.png" alt="Image 4" class="image">
-                            <div class="image-text">Steghide</div>
-                        </figure>
-
+                        
+                        <div class="card-container">
+                            <figure class="card" id="card3">
+                                <!-- Content of the card -->
+                                <img src="../assests/tools/ExifTool.png" alt="Image 2" class="image">
+                            </figure>
+                            
+                            <figure class="card" id="card4">
+                                <!-- Content of the card -->
+                
+                                <img src="../assests/tools/Steghide.png" alt="Image 2" class="image">
+                            </figure>
+                        </div>
+                        <div class="info-container">
+                            <div class="info" id="infoBox1">
+                                <!-- Information for card 1 -->
+                                hi
+                                <p></p>
+                            </div>
+                            <div class="info" id="infoBox2">
+                                <!-- Information for card 2 -->
+                                Ghiro
+                                <br>
+                                <img src="../assests/tools/Ghiro.png" width="300px" height="300px" alt="">
+                                <br>
+                                Illuminate the hidden details in your images and uncover the truth.
+                                <br><br>
+                                <a href="#" class="button">Use Tool</a>
+                                <p></p>
+                            </div>
+                            <div class="info" id="infoBox3">
+                                <!-- Information for card 3 -->
+                                cry
+                                <p></p>
+                            </div>
+                            <div class="info" id="infoBox4">
+                                <!-- Information for card 4 -->
+                                StegHide
+                                <br>
+                                <img src="../assests/tools/Steghide.png" width="300px" height="300px" alt="">
+                                <br>
+                                Discover concealed information by detecting and extracting data hidden within digital media.
+                                <br><br>
+                                <a href="#" class="button">Use Tool</a>
+                                <p></p>
+                            </div>s
+                        </div>
+                        
                     </div>
 
                     <p style="font-size: 25px;">
-                        <font style="color: aqua;">2. Video & Audio Forensics</font>
+                        <font style="color: aqua;">2. Video & Audio Forensics</font>    
                         <font style="color: white;">
                             Video and audio forensics involves investigating and analyzing videos and audio
                             recordings
@@ -424,16 +456,27 @@
             });
         // JavaScript
         const cards = document.querySelectorAll('.card');
-        const contents = document.querySelectorAll('.expanded-content');
+       
+
+        const infoBoxes = document.querySelectorAll(".info");
 
         cards.forEach((card, index) => {
-            card.addEventListener('click', () => {
-                contents.forEach((content) => {
-                    content.classList.remove('open');
+            card.addEventListener("click", () => {
+                // Hide all info boxes
+                infoBoxes.forEach((infoBox) => {
+                    infoBox.style.display = "none";
                 });
-                setTimeout(() => {
-                    contents[index].classList.add('open');
-                }, 300); // Adjust the delay (in milliseconds) as needed
+
+                // Move all cards to the extreme left
+                cards.forEach((c) => {
+                    c.style.transform = "translateX(-400px)";
+                });
+
+                // Display the message for the clicked card in the corresponding info box
+                const message = card.getAttribute("data-message");
+                infoBoxes[index].style.transform = "translateX(0)";
+                infoBoxes[index].querySelector("p").textContent = message;
+                infoBoxes[index].style.display = "block";
             });
         });
     </script>

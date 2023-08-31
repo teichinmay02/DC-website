@@ -49,3 +49,32 @@ body {
     vertical-align: middle;
 }
 
+/* Add styling for the footer content */
+.blue-footer .footer-content {
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+    justify-content: space-between;
+    height: 60px; /* Adjust the desired footer height */
+}
+
+/* Style for the logo */
+.blue-footer .footer-logo img {
+    width: 80px; /* Adjust logo size as needed */
+    height: auto;
+}
+
+/* Styling for the icon container */
+.blue-footer .icon-container {
+    display: inline-block;
+}
+
+.blue-footer .icon-container a {
+    margin-left: 10px;
+}
+
+.blue-footer .icon-container img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}

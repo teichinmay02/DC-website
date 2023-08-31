@@ -210,6 +210,7 @@ figure .serviceName {
 } */
 
 figure .details {
+  padding: 40px;
   display: inline-block;
   text-align: inherit;
   font-size: 20px;

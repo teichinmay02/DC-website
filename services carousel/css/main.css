@@ -14,7 +14,7 @@ body {
 .section1 {
   width: 100%;
   height: 120vh;
-  background-color: #220052;
+  /* background-color: #220052; */
   position: relative;
   z-index: -2;
 }
@@ -634,5 +634,223 @@ figure {
   width: 100%;
 }
 .ffmpeg_info {
+  color: wheat;
+}
+
+
+  
+.webvapt_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.webvapt_card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.webvapt_image {
+  width: 200px;
+  height: 200px;
+  background-color:black;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.webvapt_info_cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Position at the extreme right */
+  width: 100%;
+}
+
+.webvapt_info {
+  width: 800px;
+  height: 200px;
+  background-color: none;
+  /* color: #fff; */
+  text-align: center;
+  transform: translateX(100%); /* Move it to the extreme right */
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 5%;
+  top: 260%;
+  border-color: #2c2c2c;
+  display: none; /* Initially hidden */ 
+  color: wheat;
+}
+
+  
+.mobile_vapt_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mobile_vapt_card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.mobile_vapt_card {
+  width: 200px;
+  height: 200px;
+  background-color:black;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.mobile_vapt_info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mobile_vapt_info {
+  width: 800px;
+  height: 200px;
+  background-color: none;
+  /* color: #fff; */
+  text-align: center;
+  transform: translateX(100%); /* Move it to the extreme right */
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 5%;
+  top: 260%;
+  border-color: #2c2c2c;
+  display: none; /* Initially hidden */
+}
+.mobile_vapt_info-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Position at the extreme right */
+  width: 100%;
+}
+.mobile_vapt_info {
+  color: wheat;
+}
+
+  
+.api_vapt_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.api_vapt_card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.api_vapt_card {
+  width: 200px;
+  height: 200px;
+  background-color:black;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.api_vapt_info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.api_vapt_info {
+  width: 800px;
+  height: 200px;
+  background-color: none;
+  /* color: #fff; */
+  text-align: center;
+  transform: translateX(100%); /* Move it to the extreme right */
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 5%;
+  top: 260%;
+  border-color: #2c2c2c;
+  display: none; /* Initially hidden */
+}
+.api_vapt_info-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Position at the extreme right */
+  width: 100%;
+}
+.api_vapt_info {
+  color: wheat;
+}
+
+
+ 
+.src_code_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.src_code_card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.src_code_card {
+  width: 200px;
+  height: 200px;
+  background-color:black;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.src_code_info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.src_code_info {
+  width: 800px;
+  height: 200px;
+  background-color: none;
+  /* color: #fff; */
+  text-align: center;
+  transform: translateX(100%); /* Move it to the extreme right */
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 5%;
+  top: 260%;
+  border-color: #2c2c2c;
+  display: none; /* Initially hidden */
+}
+.src_code_info-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Position at the extreme right */
+  width: 100%;
+}
+.src_code_info {
   color: wheat;
 }

@@ -51,7 +51,7 @@
                 <li><a href="#">Vision</a></li>
               </ul> -->
                 </li>
-                <li><a href="#services">Services</a>
+                <li><a href="#services">Explore</a>
                     <ul class="dropdown">
                         <li><a href="#">image forensics</a></li>
                         <li><a href="#">audio forensics</a></li>
@@ -64,9 +64,9 @@
                         <li><a href="#forensics">Forensics</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact">Contact</a>
+                <!-- <li><a href="#contact">Contact</a>
                    
-                </li>
+                </li> -->
             </ul>
             <div class="search">
                 <a href="#" class="button">24x7 Cyber helpline</a>
@@ -82,14 +82,15 @@
 
             <div class="video-container-caption">
                 <div class="section1">
-                    <h1>About Deepcytes</h1>
                     <video autoplay loop muted poster="" class="back-video" width="100%">
                         <source src="../assests/dummy.mp4" type="video/mp4" />
                     </video>
                     <div class="text-container1">
-                        <div class="aboutdc">
+                        <h1>About Deepcytes</h1>
+                        <div class="aboutdc" style="color: white;">
                             <h2 class="serviceName"
-                                style="font-size: 50px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                                style="font-size: 50px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: white;"
+                                >
                                 Welcome to Our Cutting - Edge Cyber Forensics Website.</h2>
                             <p style="font-size: 30px">where we unleash the power of digital investigation to unravel the truth
                                 in a world clouded by deception. </p>
@@ -282,6 +283,7 @@
                                 <!-- Content of the FFmpeg card -->
                                 <img src="../assests/tools/FFmpeg.png" alt="FFmpeg Image" class="image">
                             </figure>
+                           
                         </div>
                         <div class="ffmpeg_info-container">
                             <div class="ffmpeg_info" id="ffmpeg_infoBox5">
@@ -323,12 +325,39 @@
                             your websites from external attacks
                         </font>
                     </p>
-
-                    <div class="web-vapt-icons">
-                        <img src="../assests/tools/WhatWeb.png" width="200px" height="200px" alt="">
-                        <img src="../assests/tools/SQLmap.png" width="300px" height="300px"  alt="">
+                    
+                    <div class="webvapt_cont">
+                        <div class="webvapt_card">
+                            <figure class="webvapt_image" id="webvapt_image">
+                                <!-- Content of the FFmpeg card -->
+                                <img src="../assests/tools/WhatWeb.png" alt="FFmpeg Image" class="image">
+                            </figure>
+                            <figure class="webvapt_image" id="webvapt_image">
+                                <!-- Content of the FFmpeg card -->
+                                <img src="../assests/tools/SQLmap.png" alt="FFmpeg Image" class="image">
+                            </figure>
+                        </div>
+                        <div class="webvapt_info_cont">
+                            <div class="webvapt_info" id="webvapt_info">
+                                <!-- Information for the FFmpeg card -->
+                                <p>ffmpeg</p>
+                                <p></p>
+                            </div>
+                            <div class="webvapt_info" id="webvapt_info">
+                                <!-- Information for the FFmpeg card -->
+                                <p>ffmpeg</p>
+                                <p></p>
+                            </div>
+                        </div>
                     </div>
-
+<!--    
+                    <figure class="web-vapt-icons">
+                        <img src="../assests/tools/WhatWeb.png" width="200px" height="200px" alt="">
+                    </figure>
+                    <figure class="web-vapt-icons">
+                        <img src="../assests/tools/SQLmap.png" width="300px" height="300px"  alt="">
+                    </figure> -->
+                 
                     <p style="font-size: 25px;">
                         <font style="color: aqua;">2. Mobile VAPT:</font>
                         <font style="color: white;">
@@ -337,9 +366,29 @@
                         </font>
                     </p>
 
-                    <div class="mobile-vapt-icons">
-                        <img src="../assests/tools/MOBsf.png" width="300px" height="300px"  alt="" srcset="">
-                        <img src="../assests/tools/MOBsf.png" width="300px" height="300px" alt="" srcset="">
+                    <div class="mobile_vapt_container">
+                        <div class="mobile_vapt_card-container">
+                            <figure class="mobile_vapt_card" id="mobile_vapt_card5">
+                                <!-- Content of the mobile_vapt card -->
+                                <img src="../assests/tools/MOBsf.png" alt="mobile_vapt Image" class="image">
+                            </figure>
+                            <figure class="mobile_vapt_card" id="mobile_vapt_card5">
+                                <!-- Content of the mobile_vapt card -->
+                                <img src="../assests/tools/MOBsf.png" alt="mobile_vapt Image" class="image">
+                            </figure>
+                        </div>
+                        <div class="mobile_vapt_info-container">
+                            <div class="mobile_vapt_info" id="mobile_vapt_infoBox5">
+                                <!-- Information for the mobile_vapt card -->
+                                <p>mobile_vapt</p>
+                                <p></p>
+                            </div>
+                            <div class="mobile_vapt_info" id="mobile_vapt_infoBox5">
+                                <!-- Information for the mobile_vapt card -->
+                                <p>mobile_vapt</p>
+                                <p></p>
+                            </div>
+                        </div>
                     </div>
 
                     <p style="font-size: 25px;">
@@ -350,8 +399,22 @@
                         </font>
                     </p>
 
-                    <div class="api-vapt-icons">
-                        <img src="../assests/tools/Jest.png" width="300px" height="300px"  alt="" srcset="">
+                    <div class="api_vapt_container">
+                        <div class="api_vapt_card-container">
+                            <figure class="api_vapt_card" id="api_vapt_card5">
+                                <!-- Content of the api_vapt card -->
+                                <img src="../assests/tools/jest.png" alt="api_vapt Image" class="image">
+                            </figure>
+                            
+                        </div>
+                        <div class="api_vapt_info-container">
+                            <div class="api_vapt_info" id="api_vapt_infoBox5">
+                                <!-- Information for the api_vapt card -->
+                                <p>api_vapt</p>
+                                <p></p>
+                            </div>
+                            
+                        </div>
                     </div>
 
                     <p style="font-size: 25px;">
@@ -362,39 +425,29 @@
                         </font>
                     </p>
 
-                    <div class="src-code-icons">
-                        <img src="../assests/tools/Pylint.png" width="300px" height="300px" alt="" srcset="">
+                    <div class="src_code_container">
+                        <div class="src_code_card-container">
+                            <figure class="src_code_card" id="src_code_card5">
+                                <!-- Content of the src_code card -->
+                                <img src="../assests/tools/jest.png" alt="src_code Image" class="image">
+                            </figure>
+                            
+                        </div>
+                        <div class="src_code_info-container">
+                            <div class="src_code_info" id="src_code_infoBox5">
+                                <!-- Information for the src_code card -->
+                                <p>src_code</p>
+                                <p></p>
+                            </div>
+                            
+                        </div>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="image-forensics2">
-                <p style="font-size: 25px;">
-                    <font style="color: aqua;">1. Image Forensics</font>
-                    <font style="color: white;">
-                        Image forensics involves using tools to determine if a picture has been altered or is real.
-                    </font>
-                </p>
-
-                <div class="img-fore-icons">
-
-                </div>
-
-                <p style="font-size: 25px;">
-                    <font style="color: aqua;">2. Video & Audio Forensics</font>
-                    <font style="color: white;">
-                        Video and audio forensics involves investigating and analyzing videos and audio recordings
-                        to
-                        uncover any
-                        tampering, alterations, or authenticity issues, much like digital detective work for
-                        audiovisual
-                        content.
-                    </font>
-                </p>
-
-            </div>
+            
         </div>
 
 
@@ -545,6 +598,94 @@
                 ffmpeg_infoBoxes[ffmpeg_index].querySelector("p").textContent = message;
                 ffmpeg_infoBoxes[ffmpeg_index].style.transform = 'translateX(0)';
                 ffmpeg_infoBoxes[ffmpeg_index].style.display = 'block';
+            });
+        });
+
+        const webvapt_cards = document.querySelectorAll('.webvapt_image');
+        const webvapt_info = document.querySelectorAll('.webvapt_info');
+
+        webvapt_cards.forEach((webvapt_card, webvapt_index) => {
+            webvapt_card.addEventListener('click', () => {
+                // Hide all webvapt info boxes
+                webvapt_info.forEach((webvapt_info) => {
+                    webvapt_info.style.display = 'none';
+                });
+
+                // Move all webvapt cards to the extreme left
+                webvapt_cards.forEach((c) => {
+                    c.style.transform = 'translateX(-400px)';
+                });
+
+                // Display the webvapt info box for the clicked card
+                webvapt_info[webvapt_index].querySelector("p").textContent = message;
+                webvapt_info[webvapt_index].style.transform = 'translateX(0)';
+                webvapt_info[webvapt_index].style.display = 'block';
+            });
+        });
+
+        const mobile_vapt_cards = document.querySelectorAll('.mobile_vapt_card');
+        const mobile_vapt_infoBoxes = document.querySelectorAll('.mobile_vapt_info');
+
+        mobile_vapt_cards.forEach((mobile_vapt_card, mobile_vapt_index) => {
+            mobile_vapt_card.addEventListener('click', () => {
+                // Hide all mobile_vapt info boxes
+                mobile_vapt_infoBoxes.forEach((mobile_vapt_infoBox) => {
+                    mobile_vapt_infoBox.style.display = 'none';
+                });
+
+                // Move all mobile_vapt cards to the extreme left
+                mobile_vapt_cards.forEach((c) => {
+                    c.style.transform = 'translateX(-400px)';
+                });
+
+                // Display the mobile_vapt info box for the clicked card
+                mobile_vapt_infoBoxes[mobile_vapt_index].querySelector("p").textContent = message;
+                mobile_vapt_infoBoxes[mobile_vapt_index].style.transform = 'translateX(0)';
+                mobile_vapt_infoBoxes[mobile_vapt_index].style.display = 'block';
+            });
+        });
+
+        const api_vapt_cards = document.querySelectorAll('.api_vapt_card');
+        const api_vapt_infoBoxes = document.querySelectorAll('.api_vapt_info');
+
+        api_vapt_cards.forEach((api_vapt_card, api_vapt_index) => {
+            api_vapt_card.addEventListener('click', () => {
+                // Hide all api_vapt info boxes
+                api_vapt_infoBoxes.forEach((api_vapt_infoBox) => {
+                    api_vapt_infoBox.style.display = 'none';
+                });
+
+                // Move all api_vapt cards to the extreme left
+                api_vapt_cards.forEach((c) => {
+                    c.style.transform = 'translateX(-400px)';
+                });
+
+                // Display the api_vapt info box for the clicked card
+                api_vapt_infoBoxes[api_vapt_index].querySelector("p").textContent = message;
+                api_vapt_infoBoxes[api_vapt_index].style.transform = 'translateX(0)';
+                api_vapt_infoBoxes[api_vapt_index].style.display = 'block';
+            });
+        });
+
+        const src_code_cards = document.querySelectorAll('.src_code_card');
+        const src_code_infoBoxes = document.querySelectorAll('.src_code_info');
+
+        src_code_cards.forEach((src_code_card, src_code_index) => {
+            src_code_card.addEventListener('click', () => {
+                // Hide all src_code info boxes
+                src_code_infoBoxes.forEach((src_code_infoBox) => {
+                    src_code_infoBox.style.display = 'none';
+                });
+
+                // Move all src_code cards to the extreme left
+                src_code_cards.forEach((c) => {
+                    c.style.transform = 'translateX(-400px)';
+                });
+
+                // Display the src_code info box for the clicked card
+                src_code_infoBoxes[src_code_index].querySelector("p").textContent = message;
+                src_code_infoBoxes[src_code_index].style.transform = 'translateX(0)';
+                src_code_infoBoxes[src_code_index].style.display = 'block';
             });
         });
 
